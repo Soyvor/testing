@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photography Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>My Photography Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact-me">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <div class="hero">
+            <img src="your-featured-image.jpg" alt="Featured Photo">
+            <h2>Elegant Timeless Photography</h2>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About</h2>
+        <p>Welcome to my portfolio. <br>
+        Exploring light, colors, and emotions, one snap at a time</p>
+        <p> Hi, I’m Sanika Upasani, a passionate photographer with a love for capturing the beauty of 
+            nature, people, architecture, and moments that often go unnoticed. Photography has been my 
+            creative outlet and a way to tell stories beyond words. Whether it’s the stillness of a 
+            landscape, the dynamic emotions of people, or the intricate details of architectural wonders,
+            my goal is to evoke emotions and offer a fresh perspective through my lens.</p>
+    </section>
+
+
+    <section id="gallery">
+        <h2 class="gallery-title">Photography Types</h2>
+    
+        <div class="tab-buttons">
+            <button class="tab" onclick="showCategory('landscape')">Landscape</button>
+            <button class="tab" onclick="showCategory('Celebrities')">Celebrities</button>
+            <button class="tab" onclick="showCategory('architecture')">Architecture</button>
+            <button class="tab" onclick="showCategory('flowers')">Flowers</button>
+            <button class="tab" onclick="showCategory('Fauna')">Fauna</button>
+            <button class="tab" onclick="showCategory('Sunset')">Sunset</button>
+            <!-- Add more categories as needed -->
+        </div>
+    
+        <!-- Sliders for each photography type -->
+        <div id="landscape" class="slider hidden">
+            <div class="slide active">
+                <img src="assests/Landscape1.jpg" class="portrait" alt="Landscape 1">
+            </div>
+            <div class="slide">
+                <img src="assests/landscape2.jpg" class="portrait" alt="Landscape 2">
+            </div>
+            <div class="slide">
+                <img src="assests/landscape3.jpg" class="portrait" alt="Landscape 2">
+            </div>
+            <div class="slide">
+                <img src="assests/landscape4.jpg" class="portrait" alt="Landscape 2">
+            </div>
+            <!-- Add more landscape photos -->
+        </div>
+    
+        <div id="Celebrities" class="slider hidden">
+            <div class="slide active">
+                <img src="assests/celeb1.jpg" class="landscape" alt="People 1">
+            </div>
+            <div class="slide">
+                <img src="assests/celeb2.jpg" class="landscape" alt="People 2">
+            </div>
+            <div class="slide">
+                <img src="assests/celeb3.jpg" class="landscape" alt="People 2">
+            </div>
+            <!-- Add more people photos -->
+        </div>
+    
+        <div id="architecture" class="slider hidden">
+            <div class="slide active">
+                <img src="assests/hampi_arch.jpg" class="landscape" alt="Architecture 1">
+            </div>
+            <div class="slide">
+                <img src="assests/arch2.jpg" class="landscape" alt="Architecture 2">
+            </div>
+            <div class="slide">
+                <img src="assests/arch3.jpg" class="portrait" alt="Architecture 2">
+            </div>
+            <!-- Add more architecture photos -->
+        </div>
+    
+        <div id="flowers" class="slider hidden">
+            <div class="slide active">
+                <img src="assests/flower1.jpg" class="landscape" alt="flower 1">
+            </div>
+            <div class="slide">
+                <img src="assests/waterdrop_flower.jpg" class="landscape" alt="flower 2">
+            </div>
+            <div class="slide">
+                <img src="assests/flower2.jpg" class="landscape" alt="flower 2">
+            </div>
+            <div class="slide">
+                <img src="assests/flower3.jpg" class="landscape" alt="flower 2">
+            </div>
+            <div class="slide">
+                <img src="assests/flower4.jpg" class="landscape" alt="flower 2">
+            </div>
+            <div class="slide">
+                <img src="assests/flower5.jpg" class="landscape" alt="flower 2">
+            </div>
+            <!-- Add more flower photos -->
+        </div>
+
+        <div id="Fauna" class="slider hidden">
+            <div class="slide active">
+                <img src="assests/Fauna.jpg" class="landscape" alt="Fauna 1">
+            </div>
+            <div class="slide">
+                <img src="assests/Fauna1.jpg" class="landscape" alt="Fauna 2">
+            </div>
+            <!-- Add more landscape photos -->
+        </div>
+
+        <div id="Sunset" class="slider hidden">
+            <div class="slide active">
+                <img src="assests/sunset1.JPG" class="landscape" alt="Sunset 1">
+            </div>
+            <div class="slide">
+                <img src="assests/sunset2.JPG" class="landscape" alt="Sunset 2">
+            </div>
+            <div class="slide">
+                <img src="assests/sunset3.JPG" class="landscape" alt="Sunset 3">
+            </div>
+            <div class="slide">
+                <img src="assests/sunset4.JPG" class="landscape" alt="Sunset 4">
+            </div>
+            <div class="slide">
+                <img src="assests/sunset5.jpg" class="landscape" alt="Sunset 4">
+            </div>
+            <!-- Add more landscape photos -->
+        </div>
+    
+        <!-- Navigation buttons for the slider -->
+        <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+        <button class="next" onclick="moveSlide(1)">&#10095;</button>
+    </section>   
+
+    <section id="contact">
+        <h2>Let us reach you</h2>
+        <form>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <section id="myinsta">
+        <div class="section__text">
+            <h4 class="title">I like to capture the beauty of life through my lens</h4>
+            <br>
+            <script 
+                src="https://static.elfsight.com/platform/platform.js"
+                data-use-service-core
+                defer
+            ></script>
+            <div
+                class="elfsight-app-f427ecf8-bb89-42db-b2e2-ec5c6d435540"
+                data-elfsight-app-lazy
+            ></div>
+        </div>
+    </section>
+
+    <section id="contact-me">
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="assests/email.png" alt="Email icon" class="icon contact-icon email-icon" />
+                <p><a href="mailto:sanikaupasani2212@gmail.com">sanikaupasani2212@gmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="assests/linkedin.png" alt="LinkedIn icon" class="icon contact-icon linkedin-icon" />
+                <p><a href="https://www.linkedin.com/in/sanikaupasani/" target="_blank">Sanika Upasani</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="assests/instagram.png" alt="Instagram icon" class="icon contact-icon instagram-icon" />
+                <p><a href="https://www.instagram.com/frame.andfocus?igsh=aGw3aGRudHZndGI3" target="_blank">frame.andfocus</a></p>
+            </div>
+        </div>
+    </section>
+    
+    <br>
+    <footer>
+        <p>&copy; 2024 Oops Photography</p>
+    </footer>
+
+<script src="script.js"></script>
+</body>
+</html>
